@@ -1,0 +1,567 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*CLASE GENERAL PARA TITULOS*/
+
+.contenedor-titulo {
+    color: #00225B;
+    font-size: 24px;
+    font-weight: 500;
+    justify-content: left;
+    display: flex;
+}
+
+
+/**seccion BANNER*/
+
+.section-banner .banner-fondo {
+    background-image: linear-gradient(rgba(0, 34, 91, 0.5), rgba(0, 34, 91, 0.5)), url("BANNER1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    color: white; /* Color del texto sobre el banner */
+}
+.section-banner .banner-fondo .contenedor-titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-bottom: 6%;
+
+}
+.section-banner .banner-fondo .contenedor-titulos .titulo-principal-banner {
+    font-size: 60px;
+    max-width: 13em;
+    text-align: left;
+    font-weight: 500;
+    margin: 0;
+    line-height: 70px;
+    
+}
+.section-banner .banner-fondo .contenedor-titulos .subtitulo-banner {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 400;
+    max-width: 11em;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.section-banner .banner-fondo .contenedor-titulos .boton-comun{
+    background-color: #00225B;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    color: #ffff;
+    border-radius: 60px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+
+
+}
+.section-banner .banner-fondo .contenedor-titulos .boton-comun:hover {
+    background-color: #F0F5FA;
+    color: #00225B; 
+}
+
+
+
+
+
+/**seccion INTRO*/
+
+.section-intro-programa {
+    background-color: #F0F5FA;
+}
+.section-intro-programa  .contenedor-titulos-programa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.section-intro-programa  .contenedor-titulos-programa .titulo-programa {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8C8C8C;
+    margin-bottom: 0;
+
+}
+.section-intro-programa  .contenedor-titulos-programa .nombre-programa {
+    color: #00225B;
+    font-weight: 500;
+    font-size: 24px;
+}
+.section-intro-programa  .contenedor-titulos-programa .parrafo-programa {
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+
+}
+
+
+
+/**seccion MALLA CURRILAR*/
+
+.section-malla-curricular {
+    background-color: #ffffff;
+    
+} 
+.section-malla-curricular .contenedor-titulo {
+    color: #00225B;
+    font-size: 24px;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+}
+.section-malla-curricular .contenedor-principal-contenido-malla {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.section-malla-curricular .contenedor-principal-contenido-malla .contenedor-botones {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 5px;
+}
+.section-malla-curricular .contenedor-principal-contenido-malla .contenedor-botones .btn-semestre-estilos {
+    background-color: #00225B;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 2px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+.section-malla-curricular .contenedor-principal-contenido-malla .contenedor-botones .btn-semestre-estilos:hover {
+    background-color: #F0F5FA;
+    color: #00225B; 
+}
+.section-malla-curricular .contenedor-principal-contenido-malla .contenedor-contenido-semestre {
+    width: 80%;
+    background-color: #F0F5FA;
+    padding: 40px;
+}
+.section-malla-curricular .contenedor-principal-contenido-malla .contenedor-contenido-semestre .parrafo-concepto-semestre p {
+   text-align: right;
+}
+.section-malla-curricular-mobile  {
+    padding: 0 5% 0 5%;
+}
+.section-malla-curricular-mobile .card-malla-mobile {
+    background-color: #F0F5FA;
+    padding: 20px 10px 20px 10px;
+}
+.section-malla-curricular-mobile .card-malla-mobile .contenedor-titulo-semestre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-malla-curricular-mobile .card-malla-mobile .contenedor-titulo-semestre p {
+  color: #00225B;
+  font-size: 16px;
+  font-weight: 600;
+}
+.section-malla-curricular-mobile .card-malla-mobile .malla-cursos-mobile ul {
+    color: #00225B;
+    font-size: 12px;
+    font-weight: 400;
+  }
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+}
+.section-malla-curricular-mobile .slider-malla-mobile .flecha-next {
+    position: absolute;
+    right: -1em !important;
+}
+.section-malla-curricular-mobile .slider-malla-mobile .flecha-prev {
+    position: absolute;
+    left: -1em !important;
+}
+
+
+/**seccion DOCENTES*/
+
+.section-docentes-cards .contenedor-cards  {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.section-docentes-cards .contenedor-cards .img-docente {
+    width: 206px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contenedor-cards .flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+.title {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 206px;
+  height: 250px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: none;
+  border-radius: 5px;
+}
+.flip-card-back {
+  background:  #00225B;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.section-docentes-mobile {
+    padding: 0 5% 0 5%;
+    margin: 10% 0 10% 0;
+}
+
+.section-docentes-mobile .contendor-general-docente-mobile{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.section-docentes-mobile .contendor-general-docente-mobile .mobile-nombre-docente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-docentes-mobile .contendor-general-docente-mobile .mobile-nombre-docente .nombre-mobile {
+   text-align: center;
+   font-size: 14px;
+   font-weight: 600;
+   color: #00225B;
+   margin-bottom: 0;
+}
+
+.section-docentes-mobile .contendor-general-docente-mobile .mobile-nombre-docente .info-mobile {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #00225B;
+    margin-bottom: 0;
+ }
+
+.section-docentes-mobile .contendor-general-docente-mobile .contendor-imagen-profesor-mobile img {
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+
+/**seccion LABORATORIOS*/
+
+.section-laboratorios {
+    background-color: #F0F5FA;
+}
+.section-laboratorios .contenedor-video {
+        width: 100%;
+        height: 400px;
+}
+.section-laboratorios .contenedor-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/**seccion TE OFRECEMOS*/
+
+.section-beneficios {
+    background-color: #00225B;
+
+}
+.section-beneficios .contendor-principal-beneficios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+}
+.section-beneficios .contendor-principal-beneficios .contenedor-texto-ofrecemos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+}
+.section-beneficios .contendor-principal-beneficios .contenedor-texto-ofrecemos .container-titulo-ofrecemos p {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    justify-content: left;
+    display: flex;
+}
+.section-beneficios .contendor-principal-beneficios .contenedor-texto-ofrecemos .container-parrafo-beneficios ul {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.section-beneficios .contendor-principal-beneficios .contendor-imagen{
+    width: 270px;
+    height: 321px;
+}
+.section-beneficios .contendor-principal-beneficios .contendor-imagen img {
+    width: 270px;
+    height: 321px;
+}
+.section-beneficios-mobile {
+    background-color: #00225B;
+    padding: 2% 5% 2% 5%;
+}
+.section-beneficios-mobile .container-titulo-ofrecemos {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    justify-content: left;
+    display: flex;
+}
+.section-beneficios-mobile .card-beneficio-mobile .item-beneficios-titulo {
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding: 10px 0 10px 0 ;
+}
+.section-beneficios-mobile .card-beneficio-mobile {
+    background-color: #EAF4FF;
+    padding: 10px;
+    width: 90%;
+    height: 140px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-beneficios-mobile .card-beneficio-mobile .icono-beneficio {
+    width: 60px;
+    height: auto;
+}
+
+
+
+
+/**seccion NOTICIAS*/
+
+.section-noticias {
+    background: #ffffff;
+}
+.section-noticias .slider-cards-noticia .flecha-prev {
+    position: absolute;
+    left: -10em !important;
+}
+.section-noticias .slider-cards-noticia .flecha-next {
+    position: absolute;
+    right: -8em !important;
+}
+.section-noticias .card-notice-principal {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F5FA;
+    border: none;
+}
+.section-noticias .card-notice-principal .contenedor-imagen-card {
+    margin-top: 10px;
+
+}
+.section-noticias .card-notice-principal .container-info-noticia {
+    padding-left: 0px;
+    padding-right: 32px;
+    height: 80px;
+}
+.section-noticias .card-notice-principal .container-info-noticia .titulo-noticia {
+    font-size: 20px ;
+    color: #00225B;
+    font-weight: 500;
+}
+.section-noticias .card-notice-principal .container-info-noticia .fecha-noticia {
+    font-size: 14px ;
+    color: #8C8C8C;
+    font-weight: 500;
+}
+.card-img-top {
+    width: 230px;
+    height: 251px;
+}
+
+
+/**seccion FOOTER*/
+
+.section-footer  {
+    background-color: #00225B;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-footer .texto-footer {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .section-malla-curricular {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 4% 0 4% 0 ;
+    }
+    .section-docentes-cards {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 4% 0 4% 0 ;
+    }
+    .section-laboratorios{
+        padding: 2% 10% 2% 10%;
+        margin: 4% 0 4% 0 ;
+    }
+    .section-beneficios {
+        padding: 5% 10% 5% 10%;
+        margin: 4% 0 4% 0 ;
+    }
+    .section-noticias{
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 4% 0 4% 0 ;
+    }
+    
+
+}
+
+
+@media screen and (min-width: 280px) and (max-width: 320px) {
+    .section-malla-curricular {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 4% 0 4% 0 ;
+    }
+    .section-docentes-cards {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 4% 0 4% 0 ;
+    }
+    .section-laboratorios{
+        padding: 2% 5% 2% 5%;
+        margin: 4% 0 4% 0 ;
+    }
+    .section-beneficios {
+        padding: 5% 5% 5% 5%;
+        margin: 4% 0 4% 0 ;
+    }
+    .section-noticias{
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 4% 0 4% 0 ;
+    }
+    .contenedor-titulo {
+        font-size: 16px !important;
+    }
+    .section-banner .banner-fondo .contenedor-titulos {
+        margin-bottom: 4%;
+    }
+    .section-banner .banner-fondo {
+        height: 50vh;
+    }
+    .section-banner .banner-fondo .contenedor-titulos .titulo-principal-banner {
+        font-size: 26px;
+        max-width: 11em;
+        line-height: 35px;
+    }
+    .section-banner .banner-fondo .contenedor-titulos .subtitulo-banner {
+        font-size: 15px;
+        max-width: 11em;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .section-banner .banner-fondo .contenedor-titulos .boton-comun{
+        background-color: #00225B;
+        border: none;
+        padding: 5px 10px 5px 10px;
+        color: #ffff;
+        border-radius: 60px;
+        font-weight: 500;
+        transition: background-color 0.3s, color 0.3s;
+        font-size: 12px;
+    
+    }
+    .section-intro-programa  .contenedor-titulos-programa .titulo-programa {
+        font-size: 12px;
+    }
+    .section-intro-programa  .contenedor-titulos-programa .nombre-programa {
+        font-size: 16px;
+        text-align: center;
+    }
+    .section-intro-programa  .contenedor-titulos-programa .parrafo-programa {
+        color: #000;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    
+    }
+    .section-laboratorios .contenedor-video iframe {
+        max-height: 250px !important;
+        min-height: 200px !important;
+    }
+    .section-footer .texto-footer {
+        font-size: 11px;
+        max-width: 25em;
+        text-align: center;
+    }
+    .section-noticias .card-notice-principal {
+        width: 200px;
+    }
+    .card-img-top {
+        width: 180px;
+        height: 151px;
+    }
+    .section-noticias .card-notice-principal .container-info-noticia .titulo-noticia {
+        font-size: 16px;
+    }
+    .section-noticias .card-notice-principal .container-info-noticia .fecha-noticia {
+        font-size: 12px;
+    }
+    .section-beneficios-mobile .card-beneficio-mobile .item-beneficios-titulo {
+        padding: 15px 0 10px 0;
+    }
+
+    .semestre-contenido {
+        display: none;
+    }
+}

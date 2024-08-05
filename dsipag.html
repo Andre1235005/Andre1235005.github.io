@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página con Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Enlace de Google Fonts para Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="section-banner">
+        <div class="banner-fondo">
+            <div class="contenedor-titulos">
+                <p class="titulo-principal-banner">¡Impulsa tu futuro en el mundo tecnológico!</p>
+                <p class="subtitulo-banner  ">Descubre tu potencial y únete a nosotros.</p>
+                <button class="boton-comun">Matricúlate aquí </button>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-intro-programa">
+        <div class="contenedor-titulos-programa">
+            <p class="titulo-programa" >PROGRAMA DE ESTUDIOS</p>
+            <p class="nombre-programa" style="text-align: center;">DESARROLLO DE SISTEMA DE INFORMACIÓN</p>
+            <p class="parrafo-programa d-none d-md-block">En el programa de Desarrollo de Sistemas de Información, los estudiantes adquieren habilidades especializadas en el diseño, implementación y gestión de sistemas de información. A través de cursos prácticos y proyectos colaborativos, los alumnos aprenden a utilizar herramientas y tecnologías de vanguardia para desarrollar soluciones innovadoras que impulsen el éxito empresarial.</p>
+            <p class="parrafo-programa d-md-none">los estudiantes dominan tecnologías avanzadas para crear soluciones innovadoras que impulsan el éxito empresarial global.</p>
+            
+            <img src="Logo.png" alt="Otra imagen local" width="180px" height="180px" style="align-items: center;">
+        </div>
+    </section>
+
+    <!-- //*section malla curricular desktop*// -->
+    <section class="section-malla-curricular d-none d-md-block">
+        <div class="contenedor-titulo">
+            <p>MALLA CURRICULAR</p>
+        </div>
+        
+        <div class="contenedor-principal-contenido-malla">
+            <div class="contenedor-botones">
+                <button class="btn-semestre-estilos" data-semester="01">Semestre 01</button>
+                <button class="btn-semestre-estilos" data-semester="02">Semestre 02</button>
+                <button class="btn-semestre-estilos" data-semester="03">Semestre 03</button>
+                <button class="btn-semestre-estilos" data-semester="04">Semestre 04</button>
+                <button class="btn-semestre-estilos" data-semester="05">Semestre 05</button>
+                <button class="btn-semestre-estilos" data-semester="06">Semestre 06</button>
+            </div>
+            <div class="contenedor-contenido-semestre">
+                <div class="semestre-contenido" data-semester="01">
+                    <div class="parrafo-concepto-semestre">
+                        <p>
+                          "Explora un semestre lleno de aprendizaje mientras te sumerges en los fundamentos de la informática. 
+                          Desde la lógica de la estructura de datos hasta la creación de aplicaciones web innovadoras, este semestre
+                          te llevará a través de un emocionante viaje donde desarrollarás habilidades en programación, diseño y comunicación.  
+                        </p>
+                    </div>
+                    <div class="parrafo-cursos-semestre">
+                        <ul>
+                            <li>Estructura de datos y lógica</li>
+                            <li>Redes de comunicación</li>
+                            <li>Programación orientada a objetos</li>
+                            <li>Diseño gráfico</li>
+                            <li>Fundamentos de Front – End</li>
+                            <li>Comunicación oral</li>
+                            <li>Aplicaciones en internet</li>
+                            <li>Cultura física y deportiva</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Agrega más divs para otros semestres aquí -->
+                <div class="semestre-contenido" data-semester="02" style="display:none;">
+                    <div class="parrafo-concepto-semestre">
+                        <p>
+                          "En este semestre, profundizarás en la programación avanzada, el desarrollo de aplicaciones móviles, 
+                          y la implementación de sistemas de bases de datos. Aprenderás sobre la seguridad informática y la creación 
+                          de interfaces de usuario interactivas."
+                        </p>
+                    </div>
+                    <div class="parrafo-cursos-semestre">
+                        <ul>
+                            <li>Diseño de Redes de Comunicación</li>
+                            <li>Introducción de Metodologías de Desarrollo de Software</li>
+                            <li>Frond-End Avanzado</li>
+                            <li>Lenguajes de Programación</li>
+                            <li>Calidad del Software y Sistemas</li>
+                            <li>Interpretación y produccion texto</li>
+                            <li>Ofimatíca</li>
+                            <li>Desarrollo Artístico</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="semestre-contenido" data-semester="03" style="display:none;">
+                    <div class="parrafo-concepto-semestre">
+                        <p>
+                          "En este semestre, profundizarás en la programación avanzada, el desarrollo de aplicaciones móviles, 
+                          y la implementación de sistemas de bases de datos. Aprenderás sobre la seguridad informática y la creación 
+                          de interfaces de usuario interactivas."
+                        </p>
+                    </div>
+                    <div class="parrafo-cursos-semestre">
+                        <ul>
+                            <li>Infraestructura TI</li>
+                            <li>Fundamentos de Programación web - Back End</li>
+                            <li>Modelamiento e implementación de base de datos</li>
+                            <li>Metodologia de Desarrollo de Software</li>
+                            <li>Desarrollo de Software</li>
+                            <li>Seguridad Informatica</li>
+                            <li>Ingles para la comunicación oral</li>
+                            <li>Comportamiento Eticó</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="semestre-contenido" data-semester="04" style="display:none;">
+                    <div class="parrafo-concepto-semestre">
+                        <p>
+                          "En este semestre, profundizarás en la programación avanzada, el desarrollo de aplicaciones móviles, 
+                          y la implementación de sistemas de bases de datos. Aprenderás sobre la seguridad informática y la creación 
+                          de interfaces de usuario interactivas."
+                        </p>
+                    </div>
+                    <div class="parrafo-cursos-semestre">
+                        <ul>
+                            <li>Soporte Tecnico Moviles</li>
+                            <li>Fundamentos de Programación web - Back End</li>
+                            <li>Modelamiento e implementación de base de datos</li>
+                            <li>Metodologia de Desarrollo de Software</li>
+                            <li>Desarrollo de Software</li>
+                            <li>Seguridad Informatica</li>
+                            <li>Ingles para la comunicación oral</li>
+                            <li>Comportamiento Eticó</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="semestre-contenido" data-semester="05" style="display:none;">
+                    <div class="parrafo-concepto-semestre">
+                        <p>
+                          "En este semestre, profundizarás en la programación avanzada, el desarrollo de aplicaciones móviles, 
+                          y la implementación de sistemas de bases de datos. Aprenderás sobre la seguridad informática y la creación 
+                          de interfaces de usuario interactivas."
+                        </p>
+                    </div>
+                    <div class="parrafo-cursos-semestre">
+                        <ul>
+                            <li>Soporte Tecnico Moviles</li>
+                            <li>Fundamentos de Programación web - Back End</li>
+                            <li>Modelamiento e implementación de base de datos</li>
+                            <li>Metodologia de Desarrollo de Software</li>
+                            <li>Desarrollo de Software</li>
+                            <li>Seguridad Informatica</li>
+                            <li>Ingles para la comunicación oral</li>
+                            <li>Comportamiento Eticó</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="semestre-contenido" data-semester="06" style="display:none;">
+                    <div class="parrafo-concepto-semestre">
+                        <p>
+                          "En este semestre, profundizarás en la programación avanzada, el desarrollo de aplicaciones móviles, 
+                          y la implementación de sistemas de bases de datos. Aprenderás sobre la seguridad informática y la creación 
+                          de interfaces de usuario interactivas."
+                        </p>
+                    </div>
+                    <div class="parrafo-cursos-semestre">
+                        <ul>
+                            <li>Soporte Tecnico Moviles</li>
+                            <li>Fundamentos de Programación web - Back End</li>
+                            <li>Modelamiento e implementación de base de datos</li>
+                            <li>Metodologia de Desarrollo de Software</li>
+                            <li>Desarrollo de Software</li>
+                            <li>Seguridad Informatica</li>
+                            <li>Ingles para la comunicación oral</li>
+                            <li>Comportamiento Eticó</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </section>
+
+    <!-- //*section malla curricular mobile*// -->
+    <section class="section-malla-curricular-mobile d-md-none ">
+        <div class="contenedor-titulo mt-3">
+            <p>MALLA CURRICULAR</p>
+        </div>
+
+        <div id="carouselExample" class="carousel slide slider-malla-mobile">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <div class="card-malla-mobile ">
+                        <div class="contenedor-titulo-semestre">
+                           <p>Semestre 01</p>
+                        </div>
+                        <div class="card-body malla-cursos-mobile ">
+                            <div class="parrafo-cursos-semestre">
+                                <ul>
+                                <li>Estructura de datos y lógica      </li>
+                                <li>Redes de comunicación</li>
+                                <li>Programación orientada a objetos</li>
+                                <li>Diseño gráfico</li>
+                                <li>Fundamentos de Front – End</li>
+                                <li>Comunicación oral</li>
+                                <li>Aplicaciones en internet</li>
+                                <li>Cultura física y deportiva</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card-malla-mobile ">
+                        <div class="contenedor-titulo-semestre">
+                           <p>Semestre 02</p>
+                        </div>
+                        <div class="card-body malla-cursos-mobile ">
+                            <div class="parrafo-cursos-semestre">
+                                <ul>
+                                <li>Estructura de datos y lógica      </li>
+                                <li>Redes de comunicación</li>
+                                <li>Programación orientada a objetos</li>
+                                <li>Diseño gráfico</li>
+                                <li>Fundamentos de Front – End</li>
+                                <li>Comunicación oral</li>
+                                <li>Aplicaciones en internet</li>
+                                <li>Cultura física y deportiva</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card-malla-mobile ">
+                        <div class="contenedor-titulo-semestre">
+                           <p>Semestre 03</p>
+                        </div>
+                        <div class="card-body malla-cursos-mobile ">
+                            <div class="parrafo-cursos-semestre">
+                                <ul>
+                                <li>Estructura de datos y lógica      </li>
+                                <li>Redes de comunicación</li>
+                                <li>Programación orientada a objetos</li>
+                                <li>Diseño gráfico</li>
+                                <li>Fundamentos de Front – End</li>
+                                <li>Comunicación oral</li>
+                                <li>Aplicaciones en internet</li>
+                                <li>Cultura física y deportiva</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card-malla-mobile ">
+                        <div class="contenedor-titulo-semestre">
+                           <p>Semestre 04</p>
+                        </div>
+                        <div class="card-body malla-cursos-mobile ">
+                            <div class="parrafo-cursos-semestre">
+                                <ul>
+                                <li>Estructura de datos y lógica      </li>
+                                <li>Redes de comunicación</li>
+                                <li>Programación orientada a objetos</li>
+                                <li>Diseño gráfico</li>
+                                <li>Fundamentos de Front – End</li>
+                                <li>Comunicación oral</li>
+                                <li>Aplicaciones en internet</li>
+                                <li>Cultura física y deportiva</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card-malla-mobile ">
+                        <div class="contenedor-titulo-semestre">
+                           <p>Semestre 05</p>
+                        </div>
+                        <div class="card-body malla-cursos-mobile ">
+                            <div class="parrafo-cursos-semestre">
+                                <ul>
+                                <li>Estructura de datos y lógica      </li>
+                                <li>Redes de comunicación</li>
+                                <li>Programación orientada a objetos</li>
+                                <li>Diseño gráfico</li>
+                                <li>Fundamentos de Front – End</li>
+                                <li>Comunicación oral</li>
+                                <li>Aplicaciones en internet</li>
+                                <li>Cultura física y deportiva</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card-malla-mobile ">
+                        <div class="contenedor-titulo-semestre">
+                           <p>Semestre 06</p>
+                        </div>
+                        <div class="card-body malla-cursos-mobile ">
+                            <div class="parrafo-cursos-semestre">
+                                <ul>
+                                <li>Estructura de datos y lógica      </li>
+                                <li>Redes de comunicación</li>
+                                <li>Programación orientada a objetos</li>
+                                <li>Diseño gráfico</li>
+                                <li>Fundamentos de Front – End</li>
+                                <li>Comunicación oral</li>
+                                <li>Aplicaciones en internet</li>
+                                <li>Cultura física y deportiva</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+
+            <button class="carousel-control-prev flecha-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" aria-hidden="true">
+                <img src="iconos/flecha-izquierda.png" width="24px"/>
+            </button>
+            <button class="carousel-control-next flecha-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <img src="iconos/flecha-correcta.png" width="24px"/>
+            </button>
+          </div>
+    </section>
+    
+
+    <section class="section-docentes-cards d-none d-md-block">
+        <div class="contenedor-titulo ">
+            <p>DOCENTES DEL PROGRAMA DE ESTUDIO</p>
+        </div>
+
+        <div class="contenedor-cards">
+            <div class="d-flex justify-content-center">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="docente.png" class="img-docente">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="title">Lozano Zapata <br> Carlos</p>
+                            <p>mas info...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="docente.png" class="img-docente">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Ramírez De Lama <br> Emilio</p>
+                                <p>mas info...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="docente.png" class="img-docente">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Nolasco Valenzuela <br> Jorge</p>
+                                <p>mas info...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="docente.png" class="img-docente">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title"> López Vítor <br> Yonni</p>
+                                <p>mas info...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="docente.png" class="img-docente">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Heredia Fiestas  <br> Carlos</p>
+                                <p>mas info...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="docente.png" class="img-docente">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Martínez Vargas <br> Pedro</p>
+                                <p>mas info...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="docente.png" class="img-docente">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title"> Gutiérrez Rosario <br> Luis</p>
+                                <p>mas info...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-docentes-mobile  d-md-none">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="contendor-general-docente-mobile">
+                    <div class="contendor-imagen-profesor-mobile">
+                        <img src="docente.png" class=""  width="100px" height="100px" >
+                    </div>
+                    <div class="mobile-nombre-docente">
+                        <p class="nombre-mobile">Lozano Zapata Carlos</p>
+                        <p class="info-mobile">Profesor</p>
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="contendor-general-docente-mobile">
+                    <div class="contendor-imagen-profesor-mobile">
+                        <img src="docente.png" class=""  width="100px" height="100px" >
+                    </div>
+                    <div class="mobile-nombre-docente">
+                        <p class="nombre-mobile">Lozano Zapata Carlos</p>
+                        <p class="info-mobile">Profesor</p>
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="contendor-general-docente-mobile">
+                    <div class="contendor-imagen-profesor-mobile">
+                        <img src="docente.png" class=""  width="100px" height="100px" >
+                    </div>
+                    <div class="mobile-nombre-docente">
+                        <p class="nombre-mobile">Lozano Zapata Carlos</p>
+                        <p class="info-mobile">Profesor</p>
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="contendor-general-docente-mobile">
+                    <div class="contendor-imagen-profesor-mobile">
+                        <img src="docente.png" class=""  width="100px" height="100px" >
+                    </div>
+                    <div class="mobile-nombre-docente">
+                        <p class="nombre-mobile">Lozano Zapata Carlos</p>
+                        <p class="info-mobile">Profesor</p>
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="contendor-general-docente-mobile">
+                    <div class="contendor-imagen-profesor-mobile">
+                        <img src="docente.png" class=""  width="100px" height="100px" >
+                    </div>
+                    <div class="mobile-nombre-docente">
+                        <p class="nombre-mobile">Lozano Zapata Carlos</p>
+                        <p class="info-mobile">Profesor</p>
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="contendor-general-docente-mobile">
+                    <div class="contendor-imagen-profesor-mobile">
+                        <img src="docente.png" class=""  width="100px" height="100px" >
+                    </div>
+                    <div class="mobile-nombre-docente">
+                        <p class="nombre-mobile">Lozano Zapata Carlos</p>
+                        <p class="info-mobile">Profesor</p>
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="contendor-general-docente-mobile">
+                    <div class="contendor-imagen-profesor-mobile">
+                        <img src="docente.png" class=""  width="100px" height="100px" >
+                    </div>
+                    <div class="mobile-nombre-docente">
+                        <p class="nombre-mobile">Lozano Zapata Carlos</p>
+                        <p class="info-mobile">Profesor</p>
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <img src="iconos/flecha-izquierda.png" width="24px"/>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <img src="iconos/flecha-correcta.png" width="24px"/>
+            </button>
+          </div>
+    </section>
+
+
+    <section class="section-laboratorios ">
+        
+        <div class="contenedor-titulo">
+            <p>NUESTROS LABORATORIOS</p>
+        </div>
+
+        <div class="contenedor video">
+            <iframe width="100%" height="600" src="https://www.youtube.com/embed/SupLYdaw5Qk" class="d-none d-md-block"></iframe>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/SupLYdaw5Qk" class="d-md-none"></iframe>
+
+        </div>
+        
+    </section>
+
+
+    <!-- //*section beneficios desktop*// -->
+<section class="section-beneficios d-none d-md-block">
+        <div class="contendor-principal-beneficios">
+            <div class="contenedor-texto-ofrecemos">
+                <div class="container-titulo-ofrecemos">
+                    <p>TE OFRECEMOS</p>
+                </div>  
+                <div class="container-parrafo-beneficios">
+                    <ul>
+                        <li>Grado de Bachiller Técnico</li>
+                        <li>Título Profesional Técnico</li>
+                        <li>Convenios Internacionales</li>
+                        <li>Docentes con experiencia profesional y académica</li>
+                        <li>Certificación Modular Progresiva</li>
+                        <li>Laboratorios y talleres con equipamiento especializado</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="contendor-imagen">
+                <img src="beneficios.png"  />
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- //*section beneficios mobile*// -->
+    <section class="section-beneficios-mobile d-md-none">
+        <div class="container-titulo-ofrecemos">
+            <p>TE OFRECEMOS</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-6">
+                <div class="card-beneficio-mobile">
+                    <div class="d-flex  justify-content-center align-items-center">
+                        <img src="iconos/birrete.png" class="icono-beneficio"/>
+                    </div>
+                    <div class="d-flex  justify-content-center align-items-center">
+                        <p class="item-beneficios-titulo">Grado de Bachiller Técnico</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="col-6">
+
+                <div class="card-beneficio-mobile">
+                    <div class="d-flex  justify-content-center align-items-center">
+                        <img src="iconos/empresario.png" class="icono-beneficio"/>
+                    </div>
+                    <div class="d-flex  justify-content-center align-items-center">
+                        <p class="item-beneficios-titulo">Título Profesional Técnico</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card-beneficio-mobile">
+                    <div class="d-flex  justify-content-center align-items-center">
+                        <img src="iconos/convenio (1).png" class="icono-beneficio"/>
+                    </div>
+                    <div class="d-flex  justify-content-center align-items-center">
+                        <p class="item-beneficios-titulo">Convenios Internacionales</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="col-6">
+                <div class="card-beneficio-mobile">
+                    <div class="d-flex  justify-content-center align-items-center">
+                        <img src="iconos/profesor.png" class="icono-beneficio"/>
+                    </div>
+                    <div class="d-flex  justify-content-center align-items-center">
+                        <p class="item-beneficios-titulo">Docentes con Experiencia  </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card-beneficio-mobile">
+                    <div class="d-flex  justify-content-center align-items-center">
+                        <img src="iconos/certificado.png" class="icono-beneficio"/>
+                    </div>
+                    <div class="d-flex  justify-content-center align-items-center">
+                        <p class="item-beneficios-titulo">Certificación Modular </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-6">
+                 <div class="card-beneficio-mobile">
+                     <div class="d-flex  justify-content-center align-items-center">
+                         <img src="iconos/computadora.png" class="icono-beneficio"/>
+                     </div>
+                     <div class="d-flex  justify-content-center align-items-center">
+                         <p class="item-beneficios-titulo">Equipos Especializados</p>
+                     </div>
+                     
+                 </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- //*section noticias desktop*// -->
+    <section class="section-noticias d-none d-md-block">
+        <div class="contenedor-titulo">
+            <p>ULTIMOS COMUNICADOS</p>
+        </div>
+
+        <div id="cardSlider" class="carousel slide slider-cards-noticia" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item  active">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card card-notice-principal">
+                                <div class="contenedor-imagen-card">
+                                    <img src="noticia-card.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body container-info-noticia">
+                                    <h5 class="titulo-noticia">Título de comunicado</h5>
+                                    <p class="fecha-noticia">06/07/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" sm="col-6">
+                            <div class="card card-notice-principal">
+                                <div class="contenedor-imagen-card">
+                                    <img src="noticia-card.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body container-info-noticia">
+                                    <h5 class="titulo-noticia">Título de comunicado</h5>
+                                    <p class="fecha-noticia">06/07/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card card-notice-principal">
+                                <div class="contenedor-imagen-card">
+                                    <img src="noticia-card.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body container-info-noticia">
+                                    <h5 class="titulo-noticia">Título de comunicado</h5>
+                                    <p class="fecha-noticia">06/07/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card card-notice-principal">
+                                <div class="contenedor-imagen-card">
+                                    <img src="noticia-card.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body container-info-noticia">
+                                    <h5 class="titulo-noticia">Título de comunicado</h5>
+                                    <p class="fecha-noticia">06/07/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card card-notice-principal">
+                                <div class="contenedor-imagen-card">
+                                    <img src="noticia-card.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body pl-0 container-info-noticia">
+                                    <h5 class="titulo-noticia">Título de comunicado</h5>
+                                    <p class="fecha-noticia">06/07/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card card-notice-principal">
+                                <div class="contenedor-imagen-card">
+                                    <img src="noticia-card.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body container-info-noticia">
+                                    <h5 class="titulo-noticia">Título de comunicado</h5>
+                                    <p class="fecha-noticia">06/07/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card card-notice-principal">
+                                <div class="contenedor-imagen-card">
+                                    <img src="noticia-card.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body container-info-noticia">
+                                    <h5 class="titulo-noticia">Título de comunicado</h5>
+                                    <p class="fecha-noticia">06/07/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card card-notice-principal">
+                                <div class="contenedor-imagen-card">
+                                    <img src="noticia-card.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body container-info-noticia">
+                                    <h5 class="titulo-noticia">Título de comunicado</h5>
+                                    <p class="fecha-noticia">06/07/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev flecha-prev  " type="button" data-bs-target="#cardSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next flecha-next " type="button" data-bs-target="#cardSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- //*section noticias mobile*// -->
+    <section class="section-noticias d-md-none ">
+        <div class="contenedor-titulo">
+            <p>ULTIMOS COMUNICADOS</p>
+        </div>
+
+        <div id="carouselExample" class="carousel slide slider-malla-mobile">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <div class="card card-notice-principal">
+                        <div class="contenedor-imagen-card">
+                            <img src="noticia-card.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body container-info-noticia">
+                            <h5 class="titulo-noticia">Título de comunicado</h5>
+                            <p class="fecha-noticia">06/07/2024</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card card-notice-principal">
+                        <div class="contenedor-imagen-card">
+                            <img src="noticia-card.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body container-info-noticia">
+                            <h5 class="titulo-noticia">Título de comunicado</h5>
+                            <p class="fecha-noticia">06/07/2024</p>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card card-notice-principal">
+                        <div class="contenedor-imagen-card">
+                            <img src="noticia-card.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body container-info-noticia">
+                            <h5 class="titulo-noticia">Título de comunicado</h5>
+                            <p class="fecha-noticia">06/07/2024</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+
+            <button class="carousel-control-prev flecha-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <img src="iconos/flecha-izquierda.png" width="24px"/>
+            </button>
+            <button class="carousel-control-next flecha-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <img src="iconos/flecha-correcta.png" width="24px"/>
+            </button>
+          </div>
+    </section>
+
+
+    <section class="section-footer">
+        <div class="texto-footer d-none d-md-block">Instituto de educación superior público "Simón Bolívar" | Copyright 2024 </div>
+        <div class="texto-footer d-md-none">Instituto de educación superior público "Simón Bolívar" Copyright 2024 </div>
+    </section>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const buttons = document.querySelectorAll(".btn-semestre-estilos");
+        const contents = document.querySelectorAll(".semestre-contenido");
+    
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                const semester = button.getAttribute("data-semester");
+    
+                // Ocultar todos los contenidos
+                contents.forEach(content => {
+                    content.style.display = "none";
+                });
+    
+                // Mostrar el contenido del semestre seleccionado
+                const selectedContent = document.querySelector(`.semestre-contenido[data-semester="${semester}"]`);
+                if (selectedContent) {
+                    selectedContent.style.display = "block";
+                }
+            });
+        });
+    });
+    </script>
